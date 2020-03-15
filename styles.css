@@ -1,0 +1,193 @@
+/* CHARLESTON GREEN #2E2E2E */
+/* METALLIC SEAWEED #1B8199 */
+/* PACIFIC BLUE  #1AACBC */
+/* PLATINUM  #E0E0E0 */
+/* GHOST WHITE #F9FCFC*/
+
+/* CHARLESTON GREEN  rgb(46, 46, 46) */
+/* hover color of CHARLESTON GREEN rgb((56, 56, 56)
+/* Global ------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    color: #2E2E2E;
+    padding:20;
+    margin:0;
+    font-family: 'Lato', sans-serif;
+    font-size:18px;
+    line-height: 1.5;
+  }
+
+.content-wrap{
+    max-width: 1500px;
+    width:90%;
+    margin: 0 auto;
+    padding:30px 0 60px 0;
+}
+
+h1, h2, h3{
+    font-family: 'PT Serif', serif;
+}
+
+h1{
+    font-size: 120px;
+    line-height: 0.5;
+}
+h2{
+    text-align: center;
+    margin:0;
+    font-size: 50px;
+    padding:20px;
+}
+h3{
+    font-size: 40px;
+}
+/*--------- Navigation Bar ----------*/
+header{
+    background-color: #1B8199;
+    height: 120px;
+    padding:20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 25px 0;
+}
+header *{
+    display: inline;
+}
+header h2{
+    padding:15px;
+}
+header ul{
+    float:right
+}
+header li{
+    margin: 20px;
+}
+header li a{
+    text-decoration: none;
+    color:#2E2E2E;
+}
+header li a:hover{
+    color:rgb(76, 76, 56);
+    opacity: 1
+}
+
+/*----------- who -------------*/
+.who {
+    background-color: #E0E0E0;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#judge{
+    background-image: url("image/judge-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#user{
+    background-image: url("image/user-background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-wrap{
+    color:#F9FCFC;
+    position:relative;
+}
+#judege .img-wrap{
+    position: relative;
+    right:5px;
+}
+
+.example_b {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+
+.example_b:hover {
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+   }
+/* #judge h3{
+    position: relative;
+    top:200px;
+    left:60px;
+    width:100%;
+} */
+
+
+/*--------------------- What ------------------*/
+
+.what h2{
+    text-align: center;
+}
+
+/*-----------------Service ---------------------*/
+.service{
+    background-color: #E0E0E0;
+}
+.service-input{
+    border-radius: 5px;
+    padding: 40px;
+}
+input[type=text], select {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+input[type=submit]:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+  /*------------Footer -------------------*/
+  footer{
+      background-color: #1B8199;
+  }
