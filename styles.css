@@ -6,6 +6,8 @@
 
 /* CHARLESTON GREEN  rgb(46, 46, 46) */
 /* hover color of CHARLESTON GREEN rgb((56, 56, 56)
+
+
 /* Global ------------------*/
 
 html {
@@ -48,6 +50,31 @@ h2{
 h3{
     font-size: 40px;
 }
+
+.input{
+    border-radius: 5px;
+    padding: 40px;
+}
+
+#btn{
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    }
+
+#btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
 /*--------- Navigation Bar ----------*/
 header{
     background-color: #1B8199;
@@ -119,24 +146,6 @@ header li a:hover{
     right:5px;
 }
 
-.example_b {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #60a3bc;
-    padding: 20px;
-    border-radius: 50px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-    }
-
-.example_b:hover {
-        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-        transition: all 0.4s ease 0s;
-   }
 /* #judge h3{
     position: relative;
     top:200px;
@@ -147,18 +156,12 @@ header li a:hover{
 
 /*--------------------- What ------------------*/
 
-.what h2{
-    text-align: center;
-}
 
 /*-----------------Service ---------------------*/
-.service{
+#service{
     background-color: #E0E0E0;
 }
-.service-input{
-    border-radius: 5px;
-    padding: 40px;
-}
+
 input[type=text], select {
     width: 100%;
     height: 80px;
@@ -169,24 +172,23 @@ input[type=text], select {
     border-radius: 10px;
     box-sizing: border-box;
 }
-input[type=submit] {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #60a3bc;
-    padding: 20px;
-    border-radius: 50px;
+
+.input{
+    display:inline-block;
+}
+.output{
     display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
+    padding:20px;
+    vertical-align: middle;
+    height:100%;
 }
 
-input[type=submit]:hover {
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.4s ease 0s;
+/* ------------------Image ------------*/
+#image{
+    
 }
+
+
   /*------------Footer -------------------*/
   footer{
       background-color: #1B8199;

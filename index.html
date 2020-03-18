@@ -27,12 +27,24 @@
         <!---------------------------- Who ------------------------>
         <section class='who'>
           <div class='content-wrap'>
-            <h2>Who You Are?</h2>
+            <h2>Are you trying to create your own business?</h2>
             <div class="row">
               <div class="column" id='judge'>
                 <div class='img-wrap'>
                   <h3>Judges</h3>
-                  <p>Text Text Text Text Text Text Text Text Text Text </p>
+                  <p>Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and 
+                     scrambled it to make a type specimen book. 
+                     It has survived not only five centuries, 
+                     but also the leap into electronic typesetting, 
+                     remaining essentially unchanged. 
+                     It was popularised in the 1960s with the release 
+                     of Letraset sheets containing Lorem Ipsum passages,
+                      and more recently with desktop publishing software 
+                      like Aldus PageMaker including versions of Lorem Ipsum. </p>
                   <img src="image/users.jpg" width=80px>
                   <btn>Try it!</btn>
                 </div> 
@@ -40,9 +52,21 @@
               <div class="column" id="user">
                 <div class='img-wrap'>
                   <h3>Users</h3>
-                  <p>Has a logo and a company, want to create a tradmark, but doesn't know wich one is legal.</p>
+                  <p>Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and 
+                     scrambled it to make a type specimen book. 
+                     It has survived not only five centuries, 
+                     but also the leap into electronic typesetting, 
+                     remaining essentially unchanged. 
+                     It was popularised in the 1960s with the release 
+                     of Letraset sheets containing Lorem Ipsum passages,
+                      and more recently with desktop publishing software 
+                      like Aldus PageMaker including versions of Lorem Ipsum. </p>
                   <img src="image/users.jpg" width=80px>
-                  <div class="button_cont" align="center"><a class="example_b" href="add-website-here" target="_blank" rel="nofollow noopener">Try it!</a></div>
+                  <div class="button_cont" align="center"><a id="btn" href="#service" target="_blank" rel="nofollow noopener">Try it!</a></div>
                 </div> 
               </div>
             </div>
@@ -57,7 +81,19 @@
               <div class="column" id = "judge">
                 <div class='img-wrap'>
                   <h3>Judges</h3>
-                  <p>Text Text Text Text Text Text Text Text Text Text </p>
+                  <p>Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and 
+                     scrambled it to make a type specimen book. 
+                     It has survived not only five centuries, 
+                     but also the leap into electronic typesetting, 
+                     remaining essentially unchanged. 
+                     It was popularised in the 1960s with the release 
+                     of Letraset sheets containing Lorem Ipsum passages,
+                      and more recently with desktop publishing software 
+                      like Aldus PageMaker including versions of Lorem Ipsum. </p>
                   <img src="image/users.jpg" width=80px>
                 </div>    
               </div>
@@ -73,16 +109,46 @@
         </section>        
         
         <!--------------------- Service ------------------>
-        <section class='service'>
+        <section id='service'>
           <div class='content-wrap'>
             <h2>Tell Us What Your Business Do</h2>
-            <form class="service-input" action="">
-                <label for="company">Please describe what your company does</label>
-                <input type="text" id="fcompany" name="fcompany" size="500"><br><br>
-                <input type="submit" value="Classfiy">
-            </form>
+            <h3>We can help you identify your business field.</h3>
+            <div class="form">
+              <form class="service-form" action="">
+                <div class="input">
+                  <label for="company">Please tell us more about your company</label>
+                  <br><br>
+                  <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
+                  <br><br>
+                  <input type="submit" value="Classfiy" id="btn">
+                </div>
+                <div class="output">
+                <div class="classification">
+                  <p>NICE classification:</p>
+                </div>
+                <div class="similarty">
+                  <p>Class Similtary Score:</p>
+                </div>
+                </div>
+              </form>
+            </div>
+            
           </div>
             
+        </section>
+
+        <!-----------------------Image Upload------------------------->
+        <section id="image">
+          <div class="content-wrap">
+            <h2>Show us your company logo</h2>
+            <h3>We can tell if this logo is used.</h3>
+            <div class="input">
+              <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit" id="btn">
+              </form>
+            </div>
+          </div>
         </section>
         <!-----------------------Footer------------------------------->
         <footer>
@@ -90,4 +156,6 @@
             <h2>Let's Keep in Touch!</h2>
           </div>
       </footer>
+      <script src="app.js"></script>
   </body>
+</html>
