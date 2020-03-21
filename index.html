@@ -6,6 +6,13 @@
     <title>Tradmark Online Tool</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+      function showResult(){
+        var result = document.getElementById("service-result").value;
+        display_message.innerHTML= result;
+        console.log(result);
+    }
+    </script>
   </head>
 
 
@@ -25,11 +32,11 @@
         </header>
 
         <!---------------------------- Who ------------------------>
-        <section class='who'>
+        <section id='part-1'>
           <div class='content-wrap'>
             <h2>Are you trying to create your own business?</h2>
             <div class="row">
-              <div class="column" id='judge'>
+              <!-- <div class="column" id='judge'>
                 <div class='img-wrap'>
                   <h3>Judges</h3>
                   <p>Lorem Ipsum is simply dummy text of 
@@ -48,7 +55,7 @@
                   <img src="image/users.jpg" width=80px>
                   <btn>Try it!</btn>
                 </div> 
-              </div>
+              </div> -->
               <div class="column" id="user">
                 <div class='img-wrap'>
                   <h3>Users</h3>
@@ -66,43 +73,37 @@
                       and more recently with desktop publishing software 
                       like Aldus PageMaker including versions of Lorem Ipsum. </p>
                   <img src="image/users.jpg" width=80px>
-                  <div class="button_cont" align="center"><a id="btn" href="#service" target="_blank" rel="nofollow noopener">Try it!</a></div>
                 </div> 
+              </div>
+              <div class="column" id="text-part1">
+                <div class="text-wrap">
+                  <h3>We Can Help You!</h3>
+                  <p>The tool will provide a prediction on whether the trademark is likely to be confused, from a legal standpoint, with a mark already in the European marketplace.</p>
+                  <div class="button_cont" align="center"><a id="btn" href="#service" target="_blank" rel="nofollow noopener">Try it!</a></div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!---------------------------- What ------------------------>
-        <section class='what'>
+        <!---------------------------- Part-2 ------------------------>
+        <section id="part-2">
           <div class='content-wrap'>
             <h2>What We Provide</h2>
             <div class="row">
-              <div class="column" id = "judge">
-                <div class='img-wrap'>
-                  <h3>Judges</h3>
-                  <p>Lorem Ipsum is simply dummy text of 
-                    the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard 
-                    dummy text ever since the 1500s,
-                     when an unknown printer took a galley of type and 
-                     scrambled it to make a type specimen book. 
-                     It has survived not only five centuries, 
-                     but also the leap into electronic typesetting, 
-                     remaining essentially unchanged. 
-                     It was popularised in the 1960s with the release 
-                     of Letraset sheets containing Lorem Ipsum passages,
-                      and more recently with desktop publishing software 
-                      like Aldus PageMaker including versions of Lorem Ipsum. </p>
-                  <img src="image/users.jpg" width=80px>
-                </div>    
-              </div>
               <div class="column" id= "user">
                 <div class='img-wrap'>
                   <h3>Users</h3>
                   <p>We provide test of your tradmark, and tell you the similarty. </p>
                   <img src="image/users.jpg" width=80px>
                 </div> 
+              </div>
+              <div class="column" id="text-part1">
+                <div class="text-wrap">
+                  <h3>We Can Help You!</h3>
+                  <p>The tool will provide a prediction on whether the trademark is likely to be confused, from a legal standpoint, with a mark already in the European marketplace.</p>
+                  <div class="button_cont" align="center"><a id="btn" href="#service" target="_blank" rel="nofollow noopener">Try it!</a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -113,28 +114,30 @@
           <div class='content-wrap'>
             <h2>Tell Us What Your Business Do</h2>
             <h3>We can help you identify your business field.</h3>
-            <div class="form">
-              <form class="service-form" action="">
-                <div class="input">
-                  <label for="company">Please tell us more about your company</label>
-                  <br><br>
-                  <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
-                  <br><br>
-                  <input type="submit" value="Classfiy" id="btn">
-                </div>
+            <div class="row">
+              <div class="column">
+                <form class="service-form">
+                  <div class="input">
+                    <label for="company">Please tell us more about your company</label>
+                    <br><br>
+                    <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
+                    <br><br>
+                    <input type="button" value="Classfiy" id="btn" onllick="showResult();">
+                  </div>
+                </form>
+              </div>
+
+              <div class="column">
                 <div class="output">
-                <div class="classification">
-                  <p>NICE classification:</p>
+                  <label>NICE Classification:</label>
+                  <p>NICE Classification:<span id="service-result"></span></p>
+                  <label>Class Similtary Score:</label>
+                  <p>Class Similtary Score:<span id="serivce-score"></span></p>
                 </div>
-                <div class="similarty">
-                  <p>Class Similtary Score:</p>
-                </div>
-                </div>
-              </form>
+              </div>
             </div>
-            
+
           </div>
-            
         </section>
 
         <!-----------------------Image Upload------------------------->
@@ -150,12 +153,42 @@
             </div>
           </div>
         </section>
+
+
+                <!--------------------- Service ------------------>
+                <section id='service'>
+                  <div class='content-wrap'>
+                    <h2>Tell Us What Your Business Do</h2>
+                    <h3>We can help you identify your business field.</h3>
+                    <div class="form">
+                      <form class="service-form" action="">
+                        <div class="input">
+                          <label for="company">Please tell us more about your company</label>
+                          <br><br>
+                          <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
+                          <br><br>
+                          <input type="submit" value="Classfiy" id="btn">
+                        </div>
+                        <div class="output">
+                        <div class="classification">
+                          <p>NICE classification:</p>
+                        </div>
+                        <div class="similarty">
+                          <p>Class Similtary Score:</p>
+                        </div>
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                    
+                </section>
         <!-----------------------Footer------------------------------->
         <footer>
           <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
           </div>
       </footer>
-      <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>

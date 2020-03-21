@@ -56,6 +56,38 @@ h3{
     padding: 40px;
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-wrap{
+    color:#F9FCFC;
+    padding:40px;
+    position:relative;
+    left:20px;
+    top:20px;
+}
+
+.text-wrap{
+    color:#2E2E2E;
+    padding:40px;
+    position:relative;
+    left:20px;
+    top:20px; 
+}
+
+
 #btn{
     color: #fff !important;
     text-transform: uppercase;
@@ -70,7 +102,7 @@ h3{
 
 #btn:hover {
     text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
 }
@@ -106,45 +138,28 @@ header li a:hover{
     opacity: 1
 }
 
-/*----------- who -------------*/
-.who {
+/*----------- Part 1 -------------*/
+#part-1 {
     background-color: #E0E0E0;
 }
 
-
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 600px; /* Should be removed. Only for demonstration */
-}
- 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#judge{
+/* #judge{
     background-image: url("image/judge-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+
 #user{
     background-image: url("image/user-background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img-wrap{
-    color:#F9FCFC;
-    position:relative;
-}
-#judege .img-wrap{
+
+
+/* #judege .img-wrap{
     position: relative;
     right:5px;
-}
+} */
 
 /* #judge h3{
     position: relative;
@@ -173,20 +188,18 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-.input{
-    display:inline-block;
-}
-.output{
-    display: inline-block;
+
+#service .output{
     padding:20px;
     vertical-align: middle;
     height:100%;
+
 }
 
 /* ------------------Image ------------*/
-#image{
+/* #image{
     
-}
+} */
 
 
   /*------------Footer -------------------*/
