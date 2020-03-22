@@ -6,13 +6,6 @@
     <title>Tradmark Online Tool</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-      function showResult(){
-        var result = document.getElementById("service-result").value;
-        display_message.innerHTML= result;
-        console.log(result);
-    }
-    </script>
   </head>
 
 
@@ -31,7 +24,7 @@
           </div>
         </header>
 
-        <!---------------------------- Who ------------------------>
+        <!---------------------------- Part-1 ------------------------>
         <section id='part-1'>
           <div class='content-wrap'>
             <h2>Are you trying to create your own business?</h2>
@@ -113,26 +106,27 @@
         <section id='service'>
           <div class='content-wrap'>
             <h2>Tell Us What Your Business Do</h2>
-            <h3>We can help you identify your business field.</h3>
+            <h3>We can help you identify your business field. blah blah blah blah</h3>
             <div class="row">
               <div class="column">
-                <form class="service-form">
+                <form id="service-form">
                   <div class="input">
                     <label for="company">Please tell us more about your company</label>
-                    <br><br>
-                    <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
-                    <br><br>
-                    <input type="button" value="Classfiy" id="btn" onllick="showResult();">
+                      <br><br>
+                      <textarea type="text" id="fcompany" name="fcompany"  placeholder="Please describe your company or business in clear and brief words...."></textarea>
+                      <br><br>
+                    <button type="button" value="Classfiy" id="btn" onllick="showResult();">Classfiy</button>
                   </div>
                 </form>
               </div>
 
               <div class="column">
                 <div class="output">
+                  <h3>Here is the result.</h3>
                   <label>NICE Classification:</label>
-                  <p>NICE Classification:<span id="service-result"></span></p>
+                    <input type = "text" id = "service-txtOutput" />
                   <label>Class Similtary Score:</label>
-                  <p>Class Similtary Score:<span id="serivce-score"></span></p>
+                    <input type = "text" id = "service-scrOutput"/>
                 </div>
               </div>
             </div>
@@ -144,51 +138,65 @@
         <section id="image">
           <div class="content-wrap">
             <h2>Show us your company logo</h2>
-            <h3>We can tell if this logo is used.</h3>
-            <div class="input">
-              <form action="/action_page.php">
-                <input type="file" id="myFile" name="filename">
-                <input type="submit" id="btn">
-              </form>
+            <h3>We can help you company identiy whether this logo is used.</h3>
+            <div class="row">
+              <div class="column col-30">
+                <div class="input">
+                  <p>Upload your compnay trademark logo and we will check if it may be confused for another trademark.</p>
+                  <form id="image-form">
+                    <input type="file" id="btn" name="filename" accept="image/*">
+                    <button type="submit" id="btn">Upload</button>
+                  </form>
+                </div>
+              </div>
+              <div class="column col-70">
+                <h3>Similar Images</h3>
+                <P>There is a risk of confusion!</P>
+                <P>Below are the similar trademarks.</P>
+                <span><img id="image-output"></span>
+              </div>
             </div>
+            
           </div>
         </section>
 
 
-                <!--------------------- Service ------------------>
-                <section id='service'>
-                  <div class='content-wrap'>
-                    <h2>Tell Us What Your Business Do</h2>
-                    <h3>We can help you identify your business field.</h3>
-                    <div class="form">
-                      <form class="service-form" action="">
-                        <div class="input">
-                          <label for="company">Please tell us more about your company</label>
-                          <br><br>
-                          <textarea type="text" id="fcompany" name="fcompany" rows="20", cols="30" placeholder="Please describe your company or business in clear and brief words...."></textarea>
-                          <br><br>
-                          <input type="submit" value="Classfiy" id="btn">
-                        </div>
-                        <div class="output">
-                        <div class="classification">
-                          <p>NICE classification:</p>
-                        </div>
-                        <div class="similarty">
-                          <p>Class Similtary Score:</p>
-                        </div>
-                        </div>
-                      </form>
-                    </div>
-                    
-                  </div>
-                    
-                </section>
+        <!--------------------- Name ------------------>
+        <section id='service'>
+          <div class='content-wrap'>
+            <h2>Tell Us Two Company Names</h2>
+            <h3>We can tell your the similarity score between these two company names.</h3>
+            <div class="row">
+              <div class="column">
+                <form id="name-form" action="">
+                  <label for="company-name-1">Company Name 1:</label>
+                    <input class="text" id="company-name-1" name="company-name-1"><br>
+                  <label for="company-name-2">Company Name 2:</label>
+                    <input class="text" id="company-name-1" name="company-name-1"><br>
+                  <button type="button" id="btn" onclick="showResult()">Compare</button>
+                </form>
+              </div>
+
+              <div class="column">
+                <div class="output">
+                  <label>Related Words:</label>
+                    <input type = "text" id = "name-wordOutput" />
+                  <label>Similtary Score:</label>
+                    <input type = "text" id = "name-scrOutput"/>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+            
+        </section>
         <!-----------------------Footer------------------------------->
         <footer>
           <div class="content-wrap">
             <h2>Let's Keep in Touch!</h2>
           </div>
       </footer>
-    <!-- <script src="app.js"></script> -->
+    <script src="app.js"></script>
   </body>
 </html>

@@ -49,19 +49,20 @@ h2{
 }
 h3{
     font-size: 40px;
+    text-align: center;
 }
 
-.input{
+input,textarea{
     border-radius: 5px;
-    padding: 40px;
+    padding: 20px;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
-    height: 600px; /* Should be removed. Only for demonstration */
+    padding: 40px;
+    height: 600px; /*Should be removed. Only for demonstration */
 }
  
 /* Clear floats after the columns */
@@ -69,6 +70,12 @@ h3{
     content: "";
     display: table;
     clear: both;
+}
+
+.col-30.column{
+    float:left;
+    width:40%;
+    height: 400px;
 }
 
 .img-wrap{
@@ -107,6 +114,10 @@ h3{
     transition: all 0.4s ease 0s;
 }
 
+textarea{
+    width: 70%;
+    height: 150px;
+}
 /*--------- Navigation Bar ----------*/
 header{
     background-color: #1B8199;
@@ -169,12 +180,13 @@ header li a:hover{
 } */
 
 
-/*--------------------- What ------------------*/
+/*--------------------- Part-2 ------------------*/
 
 
 /*-----------------Service ---------------------*/
 #service{
     background-color: #E0E0E0;
+    height:800px;
 }
 
 input[type=text], select {
@@ -196,13 +208,27 @@ input[type=text], select {
 
 }
 
+#service-txtOutput, #service-scrOutput{
+
+    background-color: #F9FCFC;
+    padding:5px;
+}
+
 /* ------------------Image ------------*/
-/* #image{
-    
-} */
 
 
-  /*------------Footer -------------------*/
-  footer{
-      background-color: #1B8199;
-  }
+
+
+/* ------------------Name ------------*/
+#name-wordOutput, #name-scrOutput{
+
+    background-color: #F9FCFC;
+    padding:5px;
+}
+
+
+
+/*------------Footer -------------------*/
+footer{
+    background-color: #1B8199;
+}
