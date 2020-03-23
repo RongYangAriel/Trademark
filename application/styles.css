@@ -166,7 +166,7 @@ header li a:hover{
 } */
 
 #user{
-    background-image: url("image/user-background2.jpg");
+    background-image: url("/image/user-background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
