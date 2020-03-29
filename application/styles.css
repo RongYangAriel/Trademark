@@ -123,6 +123,31 @@ textarea{
     width: 70%;
     height: 150px;
 }
+
+input[type=text], select {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+[id^=output]{
+    background-color: #F9FCFC;
+    padding:5px;
+    width: 80%;
+    height: 80px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 /*--------- Navigation Bar ----------*/
 header{
     background-color: #1B8199;
@@ -166,7 +191,7 @@ header li a:hover{
 } */
 
 #user{
-    background-image: url("/image/user-background2.jpg");
+    background-image: url("../image/user-background2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -194,30 +219,6 @@ header li a:hover{
     height:800px;
 }
 
-input[type=text], select {
-    width: 100%;
-    height: 80px;
-    padding: 12px 20px 20px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-
-#service .output{
-    padding:20px;
-    vertical-align: middle;
-    height:100%;
-
-}
-
-#service-txtOutput, #service-scrOutput{
-
-    background-color: #F9FCFC;
-    padding:5px;
-}
 
 /* ------------------Image ------------*/
 
@@ -225,12 +226,6 @@ input[type=text], select {
 
 
 /* ------------------Name ------------*/
-#name-wordOutput, #name-scrOutput{
-
-    background-color: #F9FCFC;
-    padding:5px;
-}
-
 
 
 /*------------Footer -------------------*/
