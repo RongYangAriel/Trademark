@@ -5,8 +5,10 @@
 /* GHOST WHITE #F9FCFC*/
 
 /* CHARLESTON GREEN  rgb(46, 46, 46) */
-/* hover color of CHARLESTON GREEN rgb((56, 56, 56)
+/* hover color of CHARLESTON GREEN rgb((56, 56, 56)*/
 
+
+@import "compass/css3";
 
 /* Global ------------------*/
 
@@ -16,7 +18,8 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+
+
 body{
     color: #2E2E2E;
     padding:20;
@@ -24,7 +27,16 @@ body{
     font-family: 'Lato', sans-serif;
     font-size:18px;
     line-height: 1.5;
-  }
+}
+
+body, html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
 
 .content-wrap{
     max-width: 1500px;
@@ -45,7 +57,7 @@ h2{
     text-align: center;
     margin:0;
     font-size: 50px;
-    padding:20px;
+    padding:10px;
 }
 h3{
     font-size: 40px;
@@ -126,9 +138,9 @@ textarea{
 
 input[type=text], select {
     width: 100%;
-    height: 80px;
-    padding: 12px 20px 20px 20px;
-    margin: 8px 0;
+    height: 4em;
+    padding: 12px;
+    margin: 8px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -138,9 +150,9 @@ input[type=text], select {
 
 [id^=output]{
     background-color: #F9FCFC;
-    padding:5px;
-    width: 80%;
-    height: 80px;
+    padding:12px;
+    width: 100%;
+    height: 4em;
     margin: 8px 0;
     display: block;
     border: 1px solid #ccc;
@@ -148,37 +160,38 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+
+/* // Sections */
+section {
+    padding: 80px;
+    height: 100%;
+    width: 100%;
+    z-index: 0; 
+    -webkit-transition: transform 1s cubic-bezier(0, 0, 0.21, 1);
+    transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+}
+
 /*--------- Navigation Bar ----------*/
-header{
-    background-color: #1B8199;
-    height: 120px;
-    padding:20px;
+ /* Nav */
+ nav {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 25px 0;
+    z-index: 10;
+    background:  #1B8199;}
+    
+nav ul li {
+    display: inline-block;
 }
-header *{
-    display: inline;
-}
-header h2{
-    padding:15px;
-}
-header ul{
-    float:right
-}
-header li{
-    margin: 20px;
-}
-header li a{
+      
+nav ul li    a {
+    font-size: 1rem;
+    display: block;
     text-decoration: none;
-    color:#2E2E2E;
-}
-header li a:hover{
-    color:rgb(76, 76, 56);
-    opacity: 1
-}
-
+    padding: 6px;
+}     
+  
 /*----------- Part 1 -------------*/
 #part-1 {
     background-color: #E0E0E0;
@@ -213,22 +226,36 @@ header li a:hover{
 /*--------------------- Part-2 ------------------*/
 
 
-/*-----------------Service ---------------------*/
+/*-----------------Service-1 ---------------------*/
 #service{
     background-color: #E0E0E0;
-    height:800px;
 }
 
 
-/* ------------------Image ------------*/
+/* ------------------Service-2 ------------*/
 
 
 
 
-/* ------------------Name ------------*/
+/* ------------------Service-3 ------------*/
 
 
-/*------------Footer -------------------*/
-footer{
-    background-color: #1B8199;
+
+
+/*---------------transition -----------*/
+
+
+
+#part-1 {
+  background: #E0E0E0;
 }
+
+#service-1 {
+  background: #E0E0E0;
+}
+
+#service-3 {
+    background: #E0E0E0;
+}
+
+/*-----------media query --------------*/
