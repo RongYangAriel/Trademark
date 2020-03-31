@@ -9,7 +9,7 @@
 
 
 @import "compass/css3";
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 /* Global ------------------*/
 
 html {
@@ -43,38 +43,34 @@ body, html {
     width:90%;
     margin: 0 auto;
     padding:30px 0 60px 0;
+    height: 100%;
+    overflow: hidden;
 }
 
-h1, h2, h3{
-    font-family: 'PT Serif', serif;
+h1, h2, h3 h4 p a{
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1{
-    font-size: 120px;
-    line-height: 0.5;
+    font-size: 3em;
 }
 h2{
-    text-align: center;
-    margin:0;
-    font-size: 50px;
-    padding:10px;
+    font-size: 2.5em;
 }
 h3{
-    font-size: 40px;
-    text-align: center;
+    font-size: 1.6em;
 }
 
-input,textarea{
-    border-radius: 5px;
-    padding: 20px;
+h4{
+    font-size:1.2em;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
-    padding: 40px;
-    height: 600px; /*Should be removed. Only for demonstration */
+    padding: 20px;
+     /*Should be removed. Only for demonstration */
 }
  
 /* Clear floats after the columns */
@@ -104,7 +100,7 @@ input,textarea{
 
 .text-wrap{
     color:#2E2E2E;
-    padding:40px;
+    padding:20px;
     position:relative;
     left:20px;
     top:20px; 
@@ -137,7 +133,8 @@ textarea{
 }
 
 input[type=text], select {
-    width: 100%;
+    text-align: center;
+    width: 85%;
     height: 4em;
     padding: 12px;
     margin: 8px;
@@ -149,11 +146,12 @@ input[type=text], select {
 
 
 [id^=output]{
+    text-align: center;
     background-color: #F9FCFC;
     padding:12px;
-    width: 100%;
+    width: 90%;
     height: 4em;
-    margin: 8px 0;
+    margin: 8px;
     display: block;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -163,8 +161,8 @@ input[type=text], select {
 
 /* // Sections */
 section {
-    padding: 80px;
-    height: 100%;
+    padding: 80px 0 0 0;
+    height: 1000px;
     width: 100%;
     z-index: 0; 
     -webkit-transition: transform 1s cubic-bezier(0, 0, 0.21, 1);

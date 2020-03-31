@@ -31,7 +31,6 @@
         <section id='part-1'>
           <div class='content-wrap'>
             <h2>Are you trying to create your own business?</h2>
-            <h3>Try our trademark tool!</h3>
             <div class="row">
               <!-- <div class="column" id='judge'>
                 <div class='img-wrap'>
@@ -55,20 +54,31 @@
               </div> -->
               <div class="column col-40" id="user">
                 <div class='img-wrap'>
-                  <h3>Users</h3>
+                  <h4>Users</h4>
                   <p>Lorem Ipsum is simply dummy text of 
                     the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard 
                     dummy text ever since the 1500s,
                      when an unknown printer took a galley of type and 
-                     scrambled it to make a type specimen book. 
+                     scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of 
+                     the printing and typesetting industry. 
+                     Lorem Ipsum has been the industry's standard 
+                     dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and 
+                      scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of 
+                      the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard 
+                      dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type and 
+                       scrambled it to make a type specimen book.when an unknown printer took a galley of type and 
+                       scrambled it to make a type specimen book.
                     </p>
                   <img src="../image/users.jpg" width=80px>
                 </div> 
               </div>
               <div class="column col-60" id="text-part1">
                 <div class="text-wrap">
-                  <h3>We Can Help You!</h3>
+                  <h4>We Can Help You!</h4>
                   <p>The tool will provide a prediction on whether the trademark is likely to be confused, from a legal standpoint, with a mark already in the European marketplace.</p>
                   <div class="button_cont" align="center"><a class="btn" href="#service" target="_blank" rel="nofollow noopener">Try it!</a></div>
                 </div>
@@ -81,18 +91,35 @@
         <section id="part-2">
           <div class='content-wrap'>
             <h2>What We Provide</h2>
-            <h3>Here you can find all you need for your trademark design</h3>
             <div class="row">
               <div class="column col-40" id= "user">
                 <div class='img-wrap'>
-                  <h3>Users</h3>
+                  <h4>Users</h4>
                   <p>We provide test of your tradmark, and tell you the similarty. </p>
+                  Lorem Ipsum is simply dummy text of 
+                    the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and 
+                     scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of 
+                     the printing and typesetting industry. 
+                     Lorem Ipsum has been the industry's standard 
+                     dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and 
+                      scrambled it to make a type specimen book.when an unknown printer took a galley of type and 
+                      scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of 
+                      the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard 
+                      dummy text ever since the 1500s,
+                       when an unknown printer took a galley of type and 
+                       scrambled it to make a type specimen book.when an unknown printer took a galley of type and 
+                       scrambled it to make a type specimen book.
                   <img src="../image/users.jpg" width=80px>
                 </div> 
               </div>
               <div class="column col-60" id="text-part1">
                 <div class="text-wrap">
-                  <h3>We Can Help You!</h3>
+                  <h4>We Can Help You!</h4>
                   <p>The tool will provide a prediction on whether the trademark is likely to be confused, from a legal standpoint, with a mark already in the European marketplace.</p>
                   <div class="button_cont" align="center"><a class="btn" href="#service-1" target="_blank" rel="nofollow noopener">Try it!</a></div>
                 </div>
@@ -105,23 +132,26 @@
         <section id='service-1'>
           <div class='content-wrap'>
             <h2>Tell Us What Your Business Do</h2>
-            <h3>We can help you identify your business field. blah blah blah blah</h3>
             <div class="row">
               <div class="column col-40">
-                <form id="service-form">
-                  <div class="input">
+                <div class="input-container">
+                  <form id="service-form">
                     <label for="company">Please tell us more about your company</label>
                       <br><br>
                       <textarea type="text" id="fcompany" name="fcompany"  placeholder="Please describe your company or business in clear and brief words...."></textarea>
                       <br><br>
                     <button type="button" value="Classfiy" class="btn" id="service-submit" onclick="postText()">Classfiy</button>
-                  </div>
                 </form>
+                <div class='example'>
+                  <h4>Example input and output</h4>
+                  <img src='../image/goodsandservices.png' style='height: 35%; width: 50%;'>
+                </div>
+                </div>
               </div>
 
               <div class="column col-60">
                 <div class="output-container">
-                  <h3>Here is the result.</h3>
+                  <h4>Here is the result.</h4>
                   <label>NICE Classification:</label>
                     <div id = "output-1-1"></div>
                   <label>Class Similtary Score:</label>
@@ -129,7 +159,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
@@ -137,20 +166,24 @@
         <section id="service-2">
           <div class="content-wrap">
             <h2>Show us your company logo</h2>
-            <h3>We can help you company identiy whether this logo is used.</h3>
             <div class="row">
               <div class="column col-40">
-                <div class="input">
+                <div class="input-container">
                   <p>Upload your compnay trademark logo and we will check if it may be confused for another trademark.</p>
                   <form id="image-form">
                     <input type="file" class="btn" id="img-upload" multiple="false" name="filename" accept="image/*">
                     <button type="button" class="btn" id="img-submit" onclick="showImg()">Upload</button>
                   </form>
+                  <div class="example">
+                    <h4>Example:</h4>
+                    <img src = '../image/similar_images.png' style='height: 60%; width: 90%;'>
+                  </div>
                 </div>
               </div>
+
               <div class="column col-60">
                 <div class="output-container">
-                  <h3>Similar Images</h3>
+                  <h4>Similar Images</h4>
                   <P>There is a risk of confusion! similarity Score:</P>
                     <div id = "output-2-1"></div>
                   <P>Below are the similar trademarks.</P>
@@ -168,20 +201,26 @@
         <section id='service-3'>
           <div class='content-wrap'>
             <h2>Tell Us Two Company Names</h2>
-            <h3>We can tell your the similarity score between these two company names.</h3>
             <div class="row">
               <div class="column col-40">
-                <form id="name-form" action="">
-                  <label for="company-name-1">Company Name 1:</label>
-                    <input type="text" id="company-name-1" name="company-name-1">
-                  <label for="company-name-2">Company Name 2:</label>
-                    <input type="text" id="company-name-1" name="company-name-1">
-                  <button type="button" class="btn" id="name-submit" onclick="getText()">Compare</button>
-                </form>
+                <div class='input-container'>
+                  <form id="name-form" action="">
+                    <label for="company-name-1">Company Name 1:</label>
+                      <input type="text" id="company-name-1" name="company-name-1">
+                    <label for="company-name-2">Company Name 2:</label>
+                      <input type="text" id="company-name-1" name="company-name-1">
+                    <button type="button" class="btn" id="name-submit" onclick="getText()">Compare</button>
+                  </form>
+                  <div class='example'>
+                    <h4>Example:</h4>
+                    <img src='../image/namecomparison.png' style='height: 35%; width: 50%;'>
+                  </div>
+                </div>
               </div>
 
               <div class="column">
                 <div class="output-container">
+                  <h4>Here is the result.</h4>
                   <label >Related Words:</label>
                     <div id = "output-4-1"></div>
 
@@ -198,20 +237,25 @@
         <section id="service-4">
           <div class="content-wrap">
             <h2>Show us your company logo</h2>
-            <h3>We can extract the presence of a used logos </h3>
             <div class="row">
               <div class="column col-40">
-                <div class="input">
+                <div class="input-container">
                   <p>Upload your compnay trademark logo and we will check if it may be confused for another trademark.</p>
                   <form id="image-form">
                     <input type="file" class="btn" id="img-upload" multiple="false" name="filename" accept="image/*">
                     <button type="button" class="btn" id="img-submit" onclick="showImg()">Upload</button>
                   </form>
                 </div>
+                <div class="example">
+                  <h4>Example: input and output</h4>
+                  <img src='../image/adidas.png' style="width: 30%; height: 30%;">
+                  <img src="../image/adidas-edited.png" style="width: 30%; height: 30%;">
+                </div>
               </div>
+
               <div class="column col-60">
                 <div class="output-container">
-                  <h3>Similar Images</h3>
+                  <h4>Similar Images</h4>
                   <P>There is a risk of confusion! similarity Score:</P>
                     <div id = "output-2-1"></div>
                   <P>Below are the similar trademarks.</P>
@@ -220,7 +264,6 @@
                 </div>
               </div>
             </div>
-            
           </div>
         </section>
     <script src="app.js"></script>
