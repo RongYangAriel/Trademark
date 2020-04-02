@@ -150,7 +150,7 @@ input[type=text], select {
     background-color: #F9FCFC;
     padding:12px;
     width: 90%;
-    height: 4em;
+    height: 90%;
     margin: 8px;
     display: block;
     border: 1px solid #ccc;
@@ -229,7 +229,42 @@ nav ul li    a {
     background-color: #E0E0E0;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+    height:600%;
+    width:150%;
+    font-size:0.7em;
+    visibility: hidden;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 /* ------------------Service-2 ------------*/
 
 
