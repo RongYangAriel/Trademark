@@ -22,6 +22,7 @@
                 <li><a  class="btn" id= "service-2-btn" href="#service-2">Service 2</a></li>
                 <li><a  class="btn" id= "service-3-btn" href="#service-3">Service 3</a></li>
                 <li><a  class="btn" id= "service-4-btn" href="#service-4">Service 4</a></li>
+                <li><a  class="btn" id= "service-5-btn" href="#service-5">Service 5</a></li>
               </ul>
             </nav>
           </div>
@@ -184,11 +185,10 @@
               <div class="column col-60">
                 <div class="output-container">
                   <h4>Similar Images</h4>
-                  <P>There is a risk of confusion! similarity Score:</P>
+                  <P>There is a risk of confusion!</P>
+                  <P>Below are the similar trademarks and similarity scores:</P>
                     <div id = "output-2-1"></div>
-                  <P>Below are the similar trademarks.</P>
-                    <div id = "output-img"></div>
-                    <img id="img-output" style="width: 100px;">
+                    <img src="../image/adidas-edited.png" id="img-output" style="width: 100px;">
                 </div>
               </div>
             </div>
@@ -263,6 +263,167 @@
             </div>
           </div>
         </section>
+
+
+        <!--------------------- Service ------------------>
+        <section id='service-1'>
+          <div class='content-wrap'>
+            <h2>Tell Us What Your Business Do</h2>
+            <div class="row">
+              <div class="column col-40">
+                <div class="input-container">
+                  <form id="service-form">
+                    <label for="company">Please tell us more about your company</label>
+                      <br><br>
+                      <textarea type="text" id="fcompany" name="company"  placeholder="Please describe your company or business in clear and brief words...."></textarea>
+                      <br><br>
+                    <button type="button" value="Classfiy" class="btn" id="service-submit" >Classfiy</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="column col-60">
+                <div class="output-container">
+                  <h4>Here is the result.</h4>
+                  <label class = "tooltip">NICE Classification: ?
+                    <span class = 'tooltiptext' id= 'output-1-3'>Class 43 includes mainly services provided by persons or 
+                      establishments whose aim is to prepare food 
+                      and drink for consumption and services provided to 
+                      obtain bed and board in hotels, boarding houses or 
+                      other establishments providing temporary accommodation.</span>
+                  </label>
+                    <div id = "output-1-1"></div>    
+                  <label>Class Similtary Score:</label>
+                    <div id = "output-1-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--------------------- Service ------------------>
+        <section id='service-5'>
+          <div class='content-wrap'>
+            <h2>Tell Us What Your Business Do</h2>
+            <div class="row">
+              <div class="column col-40">
+                <div class="input-container">
+                  <form id="service-form">
+                    <label for='SIMILARITY'>SIMILARITY OF GOODS & SERVICES:</label>
+                      <select id="option-1" name="SIMILARITY">
+                        <option class="placeholder" selected disabled value="">Select level</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                     </select>
+                     <br>
+
+                    <label for='RELEVANT'> RELEVANT PUBLIC :</label>
+                      <select id="option-2" name="RELEVANT">
+                        <option class="placeholder" selected disabled value="">Select level</option>
+                        <option value="both">Both</option>
+                      </select>
+                      <br>
+
+                    <label for='SIMILARITY'>PUBLIC DEGREE:</label>
+                    <select id="option-3" name="SIMILARITY">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <br>
+                    <label for='EARLIER'>DISTINCTIVENESS OF EARLIER MARK:</label>
+                    <select id="option-4" name="EARLIER">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="weak">Weak</option>
+                      <option value="normal">Normal</option>
+                      <option value="strong">Strong</option>
+                    </select>
+                    <br>
+
+
+                    <label for='EARLIER'>DISTINCTIVENESS OF EARLIER MARK:</label>
+                    <select id="option-5" name="EARLIER">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="weak">Weak</option>
+                      <option value="normal">Normal</option>
+                      <option value="strong">Strong</option>
+                    </select>
+                    <br>
+
+
+                    <label for='ELEMENT'>DIFFERENCE IN A DISTINCTIVE ELEMENT;</label>
+                    <select id="option-6" name="ELEMENT">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                    <br>
+
+
+                    <label for='VISUAL'>  VISUAL SIMILARITY:</label>
+                    <select id="option-7" name="VISUAL">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <br>
+
+
+                    <label for='PHONETIC'>  PHONETIC SIMILARITY:</label>
+                    <select id="option-8" name="PHONETIC">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <br>
+
+
+                    <label for="CONCEPTUAL">CONCEPTUAL SIMILARITY:</label>
+                    <select id="option-9" name="PHONETIC">
+                      <option class="placeholder" selected disabled value="">Select level</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <br>
+
+                    <button type="button" value="Classfiy" class="btn" id="service-submit" >Classfiy</button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="column col-60">
+                <div class="output-container">
+                  <h4>Here is the result.</h4>
+                  <label class = "tooltip">NICE Classification: ?
+                    <span class = 'tooltiptext' id= 'output-1-3'>Class 43 includes mainly services provided by persons or 
+                      establishments whose aim is to prepare food 
+                      and drink for consumption and services provided to 
+                      obtain bed and board in hotels, boarding houses or 
+                      other establishments providing temporary accommodation.</span>
+                  </label>
+                    <div id = "output-1-1"></div>    
+                  <label>Class Similtary Score:</label>
+                    <div id = "output-1-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <script src="app.js"></script>
   </body>
 </html>

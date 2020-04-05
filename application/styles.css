@@ -133,10 +133,11 @@ textarea{
 }
 
 input[type=text], select {
+    color:#2E2E2E;
     text-align: center;
     width: 85%;
-    height: 4em;
-    padding: 12px;
+    height: 3em;
+    padding: 10px;
     margin: 8px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -273,7 +274,14 @@ nav ul li    a {
 /* ------------------Service-3 ------------*/
 
 
-
+/*---------------Service-5 -----------*/
+select[id^=option]{
+    display:inline-block;
+    width:20%;
+}
+option{
+    color:#2E2E2E;
+}
 
 /*---------------transition -----------*/
 
@@ -292,3 +300,11 @@ nav ul li    a {
 }
 
 /*-----------media query --------------*/
+@media only screen and (max-width: 1000px){
+    .btn {
+        padding:5%;
+    }   
+    .btn#img-upload{
+        width:50%;
+    }
+}
