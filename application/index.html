@@ -140,7 +140,7 @@
                       <br><br>
                       <textarea type="text" id="fcompany" name="company"  placeholder="Please describe your company or business in clear and brief words...."></textarea>
                       <br><br>
-                    <button type="button" value="Classfiy" class="btn" id="service-submit" >Classfiy</button>
+                    <button type="button" value="Classfiy" class="btn" id="submit-1" >Classfiy</button>
                   </form>
                 </div>
               </div>
@@ -174,7 +174,7 @@
                   <p>Upload your compnay trademark logo and we will check if it may be confused for another trademark.</p>
                   <form id="image-form">
                     <input type="file" class="btn" id="img-upload" multiple="false" name="filename" accept="image/*" onchange="output2(event)">
-                    <button type="button" class="btn" id="img-submit" >Upload</button>
+                    <button type="button" class="btn" id="submit-2" >Upload</button>
                   </form>
                   <div class="example">
                     <img id='blah' src = '#' style='height: 60%; width: 90%;'>
@@ -209,7 +209,7 @@
                       <input type="text" id="company-name-1" name="company-name-1">
                     <label for="company-name-2">Company Name 2:</label>
                       <input type="text" id="company-name-2" name="company-name-2">
-                    <button type="button" class="btn" id="name-submit" onclick="output3()">Compare</button>
+                    <button type="button" class="btn" id="submit-3" onclick="output3()">Compare</button>
                   </form>
                   
                 </div>
@@ -230,7 +230,7 @@
           </div>
         </section>
 
-        <!-----------------------Extract logo images------------------------->
+        <!-----------------------Extract logo images Service 4------------------------->
         <section id="service-4">
           <div class="content-wrap">
             <h2>Show us your company logo</h2>
@@ -240,7 +240,7 @@
                   <p>Upload your compnay trademark logo and we will check if it may be confused for another trademark.</p>
                   <form id="image-form">
                     <input type="file" class="btn" id="img-upload" multiple="false" name="filename" accept="image/*">
-                    <button type="button" class="btn" id="img-submit" onclick="showImg()">Upload</button>
+                    <button type="button" class="btn" id="submit-4" onclick="showImg()">Upload</button>
                   </form>
                 </div>
                 <div class="example">
@@ -265,42 +265,7 @@
         </section>
 
 
-        <!--------------------- Service ------------------>
-        <section id='service-1'>
-          <div class='content-wrap'>
-            <h2>Tell Us What Your Business Do</h2>
-            <div class="row">
-              <div class="column col-40">
-                <div class="input-container">
-                  <form id="service-form">
-                    <label for="company">Please tell us more about your company</label>
-                      <br><br>
-                      <textarea type="text" id="fcompany" name="company"  placeholder="Please describe your company or business in clear and brief words...."></textarea>
-                      <br><br>
-                    <button type="button" value="Classfiy" class="btn" id="service-submit" >Classfiy</button>
-                  </form>
-                </div>
-              </div>
-
-              <div class="column col-60">
-                <div class="output-container">
-                  <h4>Here is the result.</h4>
-                  <label class = "tooltip">NICE Classification: ?
-                    <span class = 'tooltiptext' id= 'output-1-3'>Class 43 includes mainly services provided by persons or 
-                      establishments whose aim is to prepare food 
-                      and drink for consumption and services provided to 
-                      obtain bed and board in hotels, boarding houses or 
-                      other establishments providing temporary accommodation.</span>
-                  </label>
-                    <div id = "output-1-1"></div>    
-                  <label>Class Similtary Score:</label>
-                    <div id = "output-1-2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--------------------- Service ------------------>
+        <!--------------------- Service 5 ------------------>
         <section id='service-5'>
           <div class='content-wrap'>
             <h2>Tell Us What Your Business Do</h2>
@@ -323,6 +288,8 @@
                       <select id="option-2" name="RELEVANT">
                         <option class="placeholder" selected disabled value="">Select level</option>
                         <option value="both">Both</option>
+                        <option value="general">General Public</option>
+                        <option value="professional">Professional Pbulic</option>
                       </select>
                       <br>
 
@@ -346,7 +313,7 @@
                     <br>
 
 
-                    <label for='EARLIER'>DISTINCTIVENESS OF EARLIER MARK:</label>
+                    <label for='EARLIER'>DISTINCTIVENESS OF COMMON ASPECT:</label>
                     <select id="option-5" name="EARLIER">
                       <option class="placeholder" selected disabled value="">Select level</option>
                       <option value="weak">Weak</option>
@@ -399,7 +366,7 @@
                       <option value="5">5</option>
                     </select>
                     <br>
-                    <button type="button" value="Classfiy" class="btn" id="service-submit" >Classfiy</button>
+                    <button type="button" value="Classfiy" class="btn" id="submit-5" >Classfiy</button>
                   </form>
                 </div>
               </div>

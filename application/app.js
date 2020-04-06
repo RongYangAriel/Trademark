@@ -3,7 +3,7 @@
 
 
 //Service-1 output
-document.getElementById('service-submit').addEventListener("click",output1);
+document.getElementById('submit-1').addEventListener("click",output1);
 
 function output1(){
     // check input area is not empty
@@ -37,11 +37,18 @@ function output3(){
     }
 }
 
+//Service-5 output
+document.getElementById('submit-5').addEventListener('click',output5);
+function output5(){
+    document.getElementById("output-5-1").innerHTML="Cofusion";
+}
 // Show what user type in input are
 function showResult(){
     var result = document.getElementById("fcompany").value;
     document.getElementById("service-txtOutput").value = result;
 }
+
+
 
 // Show the images user choose
 function showImg(){
