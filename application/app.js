@@ -3,6 +3,7 @@
 
 
 //Service-1 output
+
 document.getElementById('submit-1').addEventListener("click",output1);
 
 function output1(){
@@ -15,14 +16,34 @@ function output1(){
     }
 }
 
+
+
+
+
 //Service-2 output
 
-// document.getElementById('img-upload').addEventListener("onchange", output2(event));
+// preview upload image
+document.getElementById('select-2').addEventListener("change", function(){
+    let output = document.getElementById('input-img-2');
+    let imgURL = URL.createObjectURL(event.target.files[0]);
+    output.src = imgURL;
+});
+//submit image
+document.getElementById('submit-2').addEventListener('click',function(){
+    if (document.getElementById('input-img-2').src !== '' ){
+        let output1 = document.getElementById("img-2-1");
+        let output2 = document.getElementById("img-2-2");
+        let caption1 = document.getElementById('caption-2-1');
+        let caption2 = document.getElementById('caption-2-2');
+        output1.src = "../image/auto-logo.jpg";
+        output2.src = '../image/azuma-logo.png';
+        caption1.innerHTML = 'Simlarity 75%';
+        caption2.innerHTML = 'Simlarity 90%';
+    }
+});
 
-function output2(event){
-    let output = document.getElementById('blah');
-    output.src = URL.createObjectURL(event.target.files[0]);
-}
+
+
 
 
 //Service-3 output
@@ -37,26 +58,34 @@ function output3(){
     }
 }
 
+
+
+//Service4 
+
+//Service 4 show upload image
+document.getElementById('select-4').addEventListener("change", function(){
+    let output = document.getElementById('input-img-4');
+    output.src = URL.createObjectURL(event.target.files[0]);
+});         
+// Service 4 show result
+document.getElementById('submit-4').addEventListener('click',function(){
+    if(document.getElementById('input-img-4').src !==''){
+        let output = document.getElementById("img-4");
+        output.src = '../image/adidas-edited.png';
+        let caption = document.getElementById('caption-4');
+        caption.innerHTML = "Extracted Logo";
+    }
+}); 
+
+
+
+
+
 //Service-5 output
-document.getElementById('submit-5').addEventListener('click',output5);
-function output5(){
-    document.getElementById("output-5-1").innerHTML="Cofusion";
-}
-// Show what user type in input are
-function showResult(){
-    var result = document.getElementById("fcompany").value;
-    document.getElementById("service-txtOutput").value = result;
-}
+document.getElementById('submit-5').addEventListener('click',function(){
+    document.getElementById("output-5").innerHTML="Cofusion";
+});
 
-
-
-// Show the images user choose
-function showImg(){
-    let img = document.getElementById("img-upload").files;
-    let container = document.getElementById("img-output");
-    container.src = URL.createObjectURL(img[0]);
-    console.log(img);
-}
 
 
 // // Fetch from server
