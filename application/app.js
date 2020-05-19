@@ -31,8 +31,8 @@ document.getElementById('submit-2').addEventListener('click',function(){
         let output2 = document.getElementById("img-2-2");
         let caption1 = document.getElementById('caption-2-1');
         let caption2 = document.getElementById('caption-2-2');
-        output1.src = "../image/auto-logo.jpg";
-        output2.src = '../image/azuma-logo.png';
+        output1.src = "image/auto-logo.jpg";
+        output2.src = 'image/azuma-logo.png';
         caption1.innerHTML = 'Simlarity 75%';
         caption2.innerHTML = 'Simlarity 90%';
     }
@@ -48,7 +48,7 @@ function output3(){
     let input2 = document.getElementById('company-name-2').value;
     if ((input1 !=='') && (input2 !=='')){
         document.getElementById('output-3-1').innerHTML = 
-        "Stream (Context)<br>Flow (Relationship)<br>Current (Relationship)<br>pour (Relationship)";
+        "Stream (Context); Flow (Relationship); Current (Relationship); pour (Relationship)";
         document.getElementById('output-3-2').innerHTML = 
         "54% common characters STREAMWOR";
     }
@@ -67,7 +67,7 @@ document.getElementById('select-4').addEventListener("change", function(){
 document.getElementById('submit-4').addEventListener('click',function(){
     if(document.getElementById('input-img-4').src !==''){
         let output = document.getElementById("img-4");
-        output.src = '../image/adidas-edited.png';
+        output.src = 'image/adidas-edited.png';
         let caption = document.getElementById('caption-4');
         caption.innerHTML = "Extracted Logo";
     }
