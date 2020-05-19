@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradmark Online Tool</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="application/styles.css">
   </head>
 
 
@@ -16,15 +16,20 @@
           
           <div class="navigation-bar" id='nav'>
             <nav>
-              <ul>
-                <li><a  class="btn" id = "part-1-btn" href="#part-1">ABOUT 1</a></li>
-                <li><a  class="btn" id = "part-2-btn" href="#part-2">About 2</a></li>
-                <li><a  class="btn" id= "service-1-btn" href="#service-1">Service 1</a></li>
-                <li><a  class="btn" id= "service-2-btn" href="#service-2">Service 2</a></li>
-                <li><a  class="btn" id= "service-3-btn" href="#service-3">Service 3</a></li>
-                <li><a  class="btn" id= "service-4-btn" href="#service-4">Service 4</a></li>
-                <li><a  class="btn" id= "service-5-btn" href="#service-5">Service 5</a></li>
+              <ul class="nav-links">
+                <li><a class="nav-link" id = "part-1-btn" href="#part-1">ABOUT 1</a></li>
+                <li><a class="nav-link" id = "part-2-btn" href="#part-2">About 2</a></li>
+                <li><a class="nav-link" id= "service-1-btn" href="#service-1">Service 1</a></li>
+                <li><a class="nav-link" id= "service-2-btn" href="#service-2">Service 2</a></li>
+                <li><a class="nav-link" id= "service-3-btn" href="#service-3">Service 3</a></li>
+                <li><a class="nav-link" id= "service-4-btn" href="#service-4">Service 4</a></li>
+                <li><a class="nav-link" id= "service-5-btn" href="#service-5">Service 5</a></li>
               </ul>
+              <div class="mobile-nav">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
             </nav>
           </div>
         </header>
@@ -75,7 +80,7 @@
                        scrambled it to make a type specimen book.when an unknown printer took a galley of type and 
                        scrambled it to make a type specimen book.
                     </p>
-                  <img src="../image/users.jpg" width=80px>
+                  <img src="/image/users.jpg" width=80px>
                 </div> 
               </div>
               <div class="column col-60" id="text-part1">
@@ -115,7 +120,7 @@
                       dummy text ever since the 1500s,
                        when an unknown printer took a galley of type and 
                         </p>
-                  <img src="../image/users.jpg" width=80px>
+                  <img src="/image/users.jpg" width=80px>
                 </div> 
               </div>
               <div class="column col-60" id="text-part1">
@@ -222,7 +227,7 @@
                 </div>
               </div>
 
-              <div class="column">
+              <div class="column col-60">
                 <h4>Here is the result.</h4>
                   <div class="output-container"></div>
                     <label >Related Words:</label>
@@ -328,7 +333,7 @@
                     <br>
 
 
-                    <label for='ELEMENT'>DIFFERENCE IN A DISTINCTIVE ELEMENT;</label>
+                    <label for='ELEMENT'>DIFFERENCE IN A DISTINCTIVE ELEMENT:</label>
                     <select id="option-6" name="ELEMENT">
                       <option class="placeholder" selected disabled value="">Select level</option>
                       <option value="Yes">Yes</option>
@@ -387,6 +392,7 @@
           </div>
         </section>
 
-    <script src="app.js"></script>
+    <script src="application/app.js"></script>
+    <script src="application/mobile-nav.js"></script>
   </body>
 </html>

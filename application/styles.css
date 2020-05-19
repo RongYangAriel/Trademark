@@ -10,7 +10,9 @@
 
 @import "compass/css3";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
-/* Global ------------------*/
+
+
+/* =============== Global ===========------------------*/
 
 html {
     box-sizing: border-box;
@@ -65,12 +67,7 @@ h4{
 }
 
 /* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 20px;
-     /*Should be removed. Only for demonstration */
-}
+
  
 /* Clear floats after the columns */
 .row:after {
@@ -78,13 +75,16 @@ h4{
     display: table;
     clear: both;
 }
+.column{
+    padding:10px;
+}
 
-.col-40.column{
+.col-40{
     float:left;
     width:40%;
 }
 
-.column.col-60{
+.col-60{
     float: right;
     width: 60%;
 }
@@ -168,7 +168,7 @@ section {
     transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
 }
 
-/*--------- Navigation Bar ----------*/
+/*---------========== Desktop Navigation Bar ==============----------*/
  /* Nav */
  nav {
     position: fixed;
@@ -178,16 +178,78 @@ section {
     z-index: 10;
     background:  #1B8199;}
     
-nav ul li {
+nav ul li{
     display: inline-block;
+    
 }
       
-nav ul li    a {
+.nav-link{
+    color: #e7ebee;
+    font-weight: 700;
     font-size: 1rem;
-    display: block;
+    display: flex;
     text-decoration: none;
-    padding: 6px;
+    padding: 10px;
+    text-transform: uppercase;
 }     
+
+.nav-link:hover{
+    color:#1c1d1d;
+}
+
+.nav-link.active{
+    border-bottom: #1c1d1d 1px solid;
+}
+
+/* ========================= Mobile Navigation Bar =============*/
+.mobile-nav div{
+    width:30px;
+    height:3px;
+    background-color: aliceblue;
+    margin:5px;
+    cursor: pointer;
+    left:20px;
+}
+.mobile-nav{
+    display:none;
+}
+
+@media screen and (max-width:820px){
+    body{
+        overflow: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0px;
+        height:100vh;
+        background-color:  #1B8199;
+        width:300px;
+        flex-direction: column;
+        border:1px  #1c1d1d;
+        align-items: center;
+        transform:translateX(100%);
+        transition:transform 0.5s ease-in;
+    }
+    .nav-links li{
+        display:block;
+        opacity: 1;
+    }
+    .mobile-nav{
+        display: block;
+        margin:20px;
+    }
+    nav{
+        height: 80px;;
+    }
+}
+
+.nav-active{
+    transform:translatex(0%);
+}
+.nav-disactive{
+    transform:translatex(100%);
+}
+
   
 /*----------- Part 1 -------------*/
 #part-1 {
@@ -305,5 +367,10 @@ option{
     }   
     .btn[id^=select]{
         width:50%;
+    }
+}
+@media only screen and (max-width:800px){
+    .column{
+        width:100%;
     }
 }

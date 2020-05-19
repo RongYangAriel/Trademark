@@ -1,7 +1,3 @@
-// import { isFlow } from "@babel/types";
-// import { powderblue } from "color-name";
-
-
 //Service-1 output
 
 document.getElementById('submit-1').addEventListener("click",output1);
@@ -117,3 +113,25 @@ document.getElementById('submit-5').addEventListener('click',function(){
 //     })
     
 // }
+
+const navSlide = () => {
+    const mobileNav = document.querySelector('.mobile-nav');
+    const nav = document.querySelector('.nav-links');
+    //Toggle Mobile Nav
+    mobileNav.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+    });
+
+}
+const closeNav = () =>{
+    $(document).addEventListener('click',() =>{
+        nav.classList.toggle('nav-disactive');
+    });
+}
+
+const app = () =>{
+    navSlide();
+    closeNav();
+}
+
+app();
